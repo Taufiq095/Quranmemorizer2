@@ -318,3 +318,43 @@ button.danger { background: var(--danger); color: #2b0000; }
   font-size: 0.8em;
   color: var(--text-muted);
 }
+
+/* In your global CSS or a new components.css */
+.arabic-line {
+  font-size: 28px;
+  text-align: right;
+  font-family: var(--font-arabic);
+  color: var(--arabic);
+  line-height: var(--line-ayah);
+  margin-bottom: 12px;
+}
+
+.content-chip {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.content-note {
+  background: var(--bg-soft);
+  border: 1px solid var(--divider);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+.content-label {
+  background: var(--bg-soft);
+  color: var(--accent);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,136 @@
+:root {
+  --btn-bg: #f1f3f5;
+  --btn-bg-hover: #e2e8f0;
+  --btn-text: #1a202c;
+  --panel: var(--card);
+}
+
+[data-theme="light"] {
+  --btn-bg: #f1f3f5;
+  --btn-bg-hover: #e2e8f0;
+  --btn-text: #1a202c;
+  --panel: var(--card);
+}
+
+[data-theme="dark"] {
+  --btn-bg: #30363d;
+  --btn-bg-hover: #484f58;
+  --btn-text: #f0f6fc;
+  --panel: var(--card);
+}
+
+.app {
+  color: var(--text);
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+.app-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.brand {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.brand .title {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--text-strong);
+}
+.brand .xp {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.85em;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.toggle {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.9em;
+  color: var(--text);
+}
+
+/* Range jump UI */
+.jump-ranges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.range-btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.range-btn:hover {
+  background: var(--btn-bg-hover);
+}
+.range-btn.open {
+  border-color: var(--accent);
+}
+
+.range-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-top: 8px;
+}
+.jump-range {
+  background: var(--panel);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* Number pills (high contrast) */
+.pill {
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  border: none;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 600;
+}
+
+/* Buttons and panels */
+.button, .btn-secondary {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.button:hover, .btn-secondary:hover {
+  background: var(--btn-bg-hover);
+}
+
+.panel {
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--divider);
+  box-shadow: var(--shadow-1);
+}
+
+.app-footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
